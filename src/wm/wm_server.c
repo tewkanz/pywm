@@ -153,7 +153,7 @@ static void handle_xwayland_ready(struct wl_listener* listener, void* data)
 		xcb_intern_atom_reply_t *reply =
 			xcb_intern_atom_reply(xcb_conn, cookies[i], &error);
 		if (reply != NULL && error == NULL) {
-			server->atoms[i] = reply->atom;
+			server->xcb_atoms[i] = reply->atom;
 		}
 		free(reply);
 

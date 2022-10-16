@@ -56,7 +56,7 @@ struct wm_server{
     struct wlr_xdg_decoration_manager_v1* wlr_xdg_decoration_manager;
 #ifdef WM_HAS_XWAYLAND
     struct wlr_xwayland* wlr_xwayland;
-    xcb_atom_t atoms[WM_ATOM_LAST];
+    xcb_atom_t xcb_atoms[WM_ATOM_LAST];
 #endif
     struct wlr_xcursor_manager* wlr_xcursor_manager;
     struct wlr_virtual_keyboard_manager_v1* wlr_virtual_keyboard_manager;
